@@ -1,81 +1,100 @@
-html, body {
-  height: 100%;
-  overflow: clip;
-  background-color: var(--dominant);
+body {
   background-color: rgb(148, 174, 253)
 }
 
-.row{
-    padding-top: 40px;
-  }
-  .btn-warning{
-    margin-bottom: 10px;
-  }
-  .d-flex{
-    margin-bottom: 10px;
-  }
-  .message{
-    margin-bottom: 50px;
-  }
+/* column 1 | Welcome bar */
+.col-welcome {
+  background: #2d148f;
+  color: white;
+}
+#welcome {
+  margin-top: 30px;
+}
+.btn-warning{
+  background-color: #8f145d;
+  border-color: #c275a3;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0;
+  font-size: 16px;
+}
 
+
+
+/* first row | Nav bar */
+.right-col-row1 {
+  background-color: #14148f;
+}
+#row-nav-bar {
+  display: flex;
+  align-items: flex-start;
+}
+.nav-butt{
+  background-color: rgba(255, 252, 252, 0);
+  border-width: 0;
+  color: white;
+}
+.nav-butt:hover {
+  background-color: rgb(91, 111, 241);
+  border-width: 3px;
+  border-color: rgb(111, 111, 241);
+  color: black;
+}
+
+/* row 2 col 1 | Email list */
+.col-email {
+  background-color: #1a1ab9
+}
 .btn-outline-success{
-  background-color: rgba(111, 162, 213, 0.371);
+  background-color: rgba(121, 177, 232, 0);
+  border-width: 1px;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.d-flex{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.list-group-item:hover {
+  background-color: rgb(113, 178, 247);
+  color: white;
+}
+.list-group-item:focus:active {
+  background-color: rgb(56, 151, 254);
+  color: white;
+}
+.email-info {
+    flex-grow: 1;
+}
+.name {
+  display: flex;
+  justify-content: center;
+}
+.date {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
+
+/* row 2 col 2 | Email Compose */
+.col-email-contents {
+  background-color: #2020e4;
+  color: rgb(221, 217, 217);
+}
 .btn-outline-primary {
-  background-color: rgba(111, 162, 213, 0.371);
+  background-color: rgba(121, 177, 232, 0);
+  border-width: 1px;
+  color: #ffffff;
+  border-radius: 8px;
 }
-
-#column-1 {
-  background-color: rgba(179, 190, 204, 0.675)
+.message{
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  align-items: flex-start;
 }
-#column-2 {
-  background-color: rgb(135, 142, 151)
-}
-
-#column-3 {
-  background-color: rgba(86, 90, 96, 0.482)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*Requirements for the assignment:
-  1. Create Email Template with 3-column layout using Bootstrap Grid
-  2. Use at least 2 components from Bootstrap (e.g., button, list group, card, badges, scrollspy, navbar- you can pick)
-  3. Must have the following elements:
-    a. A heading
-    b. A compose button
-    c. "Folders" aka Inbox/Drafts/Sent/Trash/etc
-    d. A search bar
-    e. 3+ emails inside your inbox with one currently   open
-    f. A textarea box for replying 
-    g. A reply button
-  4. You must style your project in your CSS, do not depend on the Bootstrap styling alone
-  5. Implement breakpoints based on your wireframes that you submitted (watch study session video if you need to review this, we went over it in more depth)
-  6. KEEP DEV LOG UP TO DATE AND RESUBMIT AT THE END!
-  
-  OPTIONAL EXTRA STUFF
-  a. import Google Fonts
-  b. import icons
-  c. media queries
-  d. Use flexbox
-  e. Use collapse and show classes from Bootstrap to hide and reveal certain columns at different breakpoints
-  f. fancy button effects
-  g. cool backgrounds
-  h. have fun with it and be creative
-  */
-  
-  
-  

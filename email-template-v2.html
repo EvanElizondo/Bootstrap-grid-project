@@ -14,26 +14,16 @@
     <div class="container-fluid">
       <div class="row w-100">
         
-        <!--column 1-->
-        <div class="col-sm-12 col-md-3 col-xl-2 nav-col" id="column-1">
-          <h2>Welcome, User</h2>
-          
+        <!--column 1 | Welcome bar-->
+        <div class="col-sm-12 col-md-3 col-xl-2 col-welcome">
+          <h2 id="welcome">Welcome, Ron</h2>
+
           <button type="button" class="btn btn-warning">Compose</button>
-          <button type="button" class="btn btn-primary">Inbox<span class="badge badge-light">3</span><span class="sr-only">unread messages</span></button>
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Saved</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Drafts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Sent</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link disabled" href="#">Trash</a>
-            </li>
-          </ul>
+          <div><button type="button" class="btn btn-primary">Inbox<span> </span></button></div>
+          <div><button type="button" class="btn btn-primary">Drafts<span> </span></button></div>          
+          <div><button type="button" class="btn btn-primary">Saved<span> </span></button></div>          
+          <div><button type="button" class="btn btn-primary">Sent<span> </span></button></div>          
+          <div><button type="button" class="btn btn-primary">Trash<span> </span></button></div>
         </div>
 
         <!--column 2-->
@@ -41,64 +31,45 @@
           <!--first row | Nav bar-->
           <div class="row right-col-row1">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled">Disabled</a>
-                    </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
+                <div id="row-nav-bar">
+                  <button class="nav-butt">Select All</button>
+                  <button class="nav-butt">trash</button>
+                  <button class="nav-butt">refresh</button>
                 </div>
               </div>
             </nav>
           </div>
-          <!---->
+
           <div class="row right-col-row2">
-            <!--column 2.1-->
-            <div class="col-sm-12 col-md-12 col-xl-6 col-email" id="column-2">
+            <!--row 2 col 1 | Email list-->
+            <div class="col-sm-12 col-md-12 col-xl-6 col-email">
               <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search emails" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
               <ul class="list-group">
-                <li class="list-group-item" aria-current="true"><strong>Email Example One</strong><br>Body text goes here...</li>
-                <li class="list-group-item active"><strong>Email Example Two</strong><br>Body text goes here...</li>
-                <li class="list-group-item"><strong>Email Example Three</strong><br>Body text goes here...</li>
+                <li class="list-group-item" aria-current="true"><strong>Darrel Willson</strong><br>I was wondering if your were still avalible...</li>
+                <li class="list-group-item active"><strong>Glen Close</strong><br>Hey Ron I'm in a real pickle right now and I could use...</li>
+                <li class="list-group-item" aria-current="true"><strong>Jodie Foster</strong><br>This is the LA police department to update you on the date of your...</li>
+                <li class="list-group-item" aria-current="true"><strong>Henry Oak</strong><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</li>
+                <li class="list-group-item" aria-current="true"><strong>Scam Likely</strong><br>I need your help! I'm a prince from the country...</li>
               </ul>
+              
+
             </div>
 
-            <!--column 2.2--> <!--Email Compose-->
-            <div class="col-sm-12 col-md-12 col-xl-6 col-email-contents" id="column-3">
-              <h6>To: user@fake-email.com</h6>
-              <h6>From: sender@fake-email.com</h6>
-              <h3><strong>Subject: Email Example Two</strong></h3>
+            <!--row 2 col 2 | Email Compose-->
+            <div class="col-sm-12 col-md-12 col-xl-6 col-email-contents">
+              <h6>From: <strong class="sender"> TheCloseTrio</strong>@Hotmail.com</h6>
+              <h6>To: Ron Stampler</h6>
+              <h3><strong>Subject: Need some Cash</strong></h3>
               <p class="message">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus dolor porro ipsam minus dignissimos eius? Perspiciatis sint quos tenetur cupiditate fugit neque hic aut, expedita repellat cumque accusantium aliquam, laborum tempora magnam! Reiciendis culpa, dolorum officiis beatae esse placeat natus aliquam velit soluta quod nemo iste adipisci quisquam voluptate itaque.</p>
-              <!--Response-->
+              <!--message box-->
               <textarea id="story" name="story" rows="5" cols="75"> Type your response here </textarea>
               <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
                 <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
